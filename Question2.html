@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question2</title>
+    <style>
+
+.main{
+    margin: 50px;
+    width: 1000px;
+    height: 600px;
+  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+.item{
+    background-color: bisque;
+ border: 1px solid white;
+ border-radius: 10px;
+ color: rgb(0, 0, 0);
+ align-items: center;
+ text-align:start;
+ position:static;
+ left: 25px;
+ font-size: 60px;
+}
+
+.item1{
+ grid-column-start: 1;
+ grid-column-end: 3;
+
+}
+
+.item2{
+   grid-column-start:3 ;
+   grid-column-end:4;
+
+   grid-row-start: 1;
+grid-row-end: 3;
+   
+}
+
+.item3 {
+grid-column-start: 1;
+grid-column-end: 2;
+}
+
+.item4 {
+grid-column-start: 2;
+grid-column-end: 3;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class=" item item1" >A</div>
+        <div class="item item2" > B</div>
+        <div class=" item item3" >C</div>
+        <div class=" item item4" >D</div>
+        
+    </div>
+</body>
+</html>
